@@ -39,13 +39,25 @@ while True:
 print('You are only given (1) chance to answer each question correctly. So, just get it right.')
 
 print('\nHere is the first question: ', end = '')
-print('What is 2 + 2? Please enter a number.')
+print('What is 2 + 2 ? Please enter a number.')
 answer_two = input()
 
 if answer_two == '4':
-    print('You got it!')
+    print('You got it! Amazing!')
 
 else:
     terminator()
 
-    
+
+
+
+#This block of code holds the second math question.
+
+print('\nHere is the next question: ', end = '')
+print('What is ((4*2) + 8)/4 ? Please enter a number.')
+answer_three = input()
+
+if answer_three == '4':
+    print('It is true! You do like math!')
+else:
+    terminator()
