@@ -61,3 +61,26 @@ if answer_three == '4':
     print('It is true! You do like math!')
 else:
     terminator()
+
+
+
+
+#Here is the third and final question.
+
+print('\nHere is the final question: ', end = '')
+print('How do you spell \'4\' ? Please use capital letters.')
+answer_four = input()
+
+if answer_four == 'FOUR':
+    print('Wow! You did fantastic!')
+    print('\nEnter anything to quit.')
+    input()
+    print('Goodbye.')
+    exit()
+
+elif answer_four == 'Four' or answer_four == 'four':
+    print('You were so close, but so far...')
+    terminator()
+
+else:
+    terminator()
