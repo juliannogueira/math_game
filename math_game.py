@@ -27,13 +27,13 @@ def terminator():
 print('Hello! Do you like math?')
 
 while True:
-    answer_one = input()
+    like_math = input()
 
-    if answer_one == 'YES' or answer_one == 'Yes' or answer_one == 'yes':
+    if like_math == 'YES' or like_math == 'Yes' or like_math == 'yes':
         print('\nAwesome! I will give you a fun math quiz!\nIt consists of (3) questions.')
         break
 
-    elif answer_one == 'NO' or answer_one == 'No' or answer_one == 'no':
+    elif like_math == 'NO' or like_math == 'No' or like_math == 'no':
         print('Okay! Have a nice day! Enter anything to quit.')
         input()
         exit()
@@ -50,9 +50,9 @@ print('You are only given (1) chance to answer each question correctly. So, just
 
 print('\nHere is the first question: ', end = '')
 print(question_one)
-answer_two = input()
+answer_one = input()
 
-if answer_two == '4':
+if answer_one == '4':
     print('You got it! Amazing!')
 
 else:
@@ -65,9 +65,9 @@ else:
 
 print('\nHere is the next question: ', end = '')
 print(question_two)
-answer_three = input()
+answer_two = input()
 
-if answer_three == '4':
+if answer_two == '4':
     print('It is true! You do like math!')
 else:
     terminator()
@@ -79,16 +79,16 @@ else:
 
 print('\nHere is the final question: ', end = '')
 print(question_three)
-answer_four = input()
+answer_three = input()
 
-if answer_four == 'FOUR':
+if answer_three == 'FOUR':
     print('Wow! You did fantastic!')
     print('\nEnter anything to quit.')
     input()
     print('Goodbye.')
     exit()
 
-elif answer_four == 'Four' or answer_four == 'four':
+elif answer_three == 'Four' or answer_three == 'four':
     print('You were so close, but so far...')
     terminator()
 
