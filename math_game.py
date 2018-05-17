@@ -1,3 +1,13 @@
+#These variables will hold the math questions.
+question_one = 'What is 2 + 2 ? Please enter a number.'
+
+question_two = 'What is ((4*2) + 8)/4 ? Please enter a number.'
+
+question_three = 'How do you spell \'4\' ? Please use capital letters.'
+
+
+
+
 #This function will be used to terminate the program if a user answers a question incorrectly.
 
 def terminator():
@@ -39,7 +49,7 @@ while True:
 print('You are only given (1) chance to answer each question correctly. So, just get it right.')
 
 print('\nHere is the first question: ', end = '')
-print('What is 2 + 2 ? Please enter a number.')
+print(question_one)
 answer_two = input()
 
 if answer_two == '4':
@@ -54,7 +64,7 @@ else:
 #This block of code holds the second math question.
 
 print('\nHere is the next question: ', end = '')
-print('What is ((4*2) + 8)/4 ? Please enter a number.')
+print(question_two)
 answer_three = input()
 
 if answer_three == '4':
@@ -68,7 +78,7 @@ else:
 #Here is the third and final question.
 
 print('\nHere is the final question: ', end = '')
-print('How do you spell \'4\' ? Please use capital letters.')
+print(question_three)
 answer_four = input()
 
 if answer_four == 'FOUR':
